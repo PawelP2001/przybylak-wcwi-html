@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Przybylak WCWI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#section-witamy">Witamy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section-galeria">Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section-about">O mnie</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section-contact">Kontakt</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="section-witamy" class="section">
+  <div class="container">
+    <h2>Witamy</h2>
+    <img src="img/author_portrait.jpg" alt="author" class="author rounded img-fluid">
+    <p class="witamy-text">Autorem strony jest Paweł Przybylak, student 3-go roku Logistyki na Akademii im. Jakuba z Paradyża w Gorzowie Wielkopolskim, aspirujący Fullstack Developer. Witryna została stworzona na potrzeby rekrutacji do Wielkopolskie Centrum Wspierania Inwestycji sp. z o.o. w Poznaniu. Ma ona na celu zaprezentowanie umiejętności w zakresie HTML, CSS oraz JavaScript.</p>
+    <button id="dowiedz-sie-wiecej">Dowiedz się więcej</button>
+  </div>
+</section>
+
+<section id="section-galeria" class="section">
+    <div class="container">
+      <h2>Galeria</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="gallery-item">
+            <img src="img/1.png" alt="Obraz screenshot" class="img-fluid">
+            <p class="galeria-opis">Grafika przedstawia prawdopodobnie zrzut ekranu, na którym zaobserwować możemy człowieka zdobywającego jakiś szczyt, zwieńczając go czerwoną flagą.</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="gallery-item">
+            <img src="img/2.png" alt="Obraz plakat" class="img-fluid">
+            <p class="galeria-opis">Obrazek ukazujący liczne rośliny, książki czy też różnego rodzaju wykresy oraz bliżej niesprecyzowane dane. Tło sugeruje, że jest to plakat leżący na biurku.</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="gallery-item">
+            <img src="img/3.png" alt="Obraz puzzle" class="img-fluid">
+            <p class="galeria-opis">"Puzzle", grafika przedstawia ramę, w środku której znajdują się puzzle i dłonie układające je. Rama otoczona jest przez kilkunastoosobową grupę ludzi wyraźnie nią zainteresowaną.</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="gallery-item">
+            <img src="img/4.png" alt="Obraz eureka" class="img-fluid">
+            <p class="galeria-opis">Grafika przedstawiająca wszelkiego rodzaju narzędzia artystyczne i nie tylko, na pierwszym planie widzimy żarówkę, może ona oznaczać słowo "eureka".</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="section-about" class="section">
+  <div class="container">
+    <h2>O mnie</h2>
+    <p class="about-text">Nazywam się Paweł Przybylak i jestem Fullstack Developerem z wyjątkową motywacją do wnoszenia swojej wiedzy i umiejętności do zespołu. Od zawsze pasjonowała mnie technologia, co skłoniło mnie do kariery programisty. Podczas ponad 5-miesięcznego bootcampu w Mate Academy zgłębiłem różne języki programowania, w tym JavaScript, React, HTML i CSS, ucząc się także dbałości o jakość kodu i jego funkcjonalność. Mam ponad 500 godzin doświadczenia w tworzeniu responsywnych interfejsów użytkownika oraz dobrą znajomość GIT i Github, co pozwala mi na efektywne zarządzanie kodem i współpracę zespołową. Jedną z moich głównych zalet jest umiejętność pracy pod presją, dzięki spokojnej naturze skupiam się na rozwiązywaniu problemów nawet w trudnych sytuacjach. Jestem przekonany, że moje zaangażowanie i determinacja sprawią, że będę cennym członkiem zespołu programistów.<br>Ponadto, dobrze integruję się z zespołem i lubię angażować się w różnorodne projekty, co potwierdziło się podczas bootcampu. Jestem także gotowy do udzielania pomocy innym członkom zespołu, aby osiągnąć wspólne cele. Dążę do utrzymania pozytywnej i produktywnej atmosfery pracy.<br>W celu skontaktowania się ze mną zapraszam do skorzystania z formularza kontaktowego znajdującego się poniżej.</p>
+  </div>
+</section>
+
+<section id="section-contact">
+    <div class="container contact">
+      <h2>Kontakt</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Imię:</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Wiadomość:</label>
+          <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+        </div>
+        <button id="form-wyslij" type="submit" class="btn btn-primary">Wyślij</button>
+      </form>
+    </div>
+  </section>
+
+<footer class="footer">
+    <div class="container">
+        <p>IV 2024 Paweł Przybylak</p>
+    </div>
+</footer>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const button = document.getElementById('dowiedz-sie-wiecej');
+        const aboutSection = document.getElementById('section-about');
+
+        button.addEventListener('click', function () {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(form);
+            if (validateForm(formData)) {
+                sendData(formData);
+            }
+        });
+
+        function validateForm(formData) {
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const message = formData.get('message');
+            let isValid = true;
+
+            if (!name || !email || !message) {
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        function sendData(formData) {
+            setTimeout(function() {
+                alert('Twoja wiadomość została pomyślnie wysłana, dziękujemy za kontakt!');
+                form.reset();
+            }, 1000);
+        }
+    });
+</script>
+</body>
+</html>
