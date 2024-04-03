@@ -61,8 +61,8 @@ h2 {
 .contact-form {
     margin-top: 50px;
     width: 60%;
-    margin-left: auto; /* Wyśrodkowanie formularza */
-    margin-right: auto; /* Wyśrodkowanie formularza */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #form-wyslij,
